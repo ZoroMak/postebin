@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 import {TOKEN_ENDPOINT} from "../authorization/constants";
 
 const baseUrl = "http://localhost:8080/api/v1/user/login";
+// const baseUrl = 'http://post_backend:8080/api/v1/user/login';
 
 class LoginForm extends React.Component {
     constructor(props) {

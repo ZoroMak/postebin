@@ -3,7 +3,8 @@ import Post from "./Post";
 import SearchElement from "./SearchElement";
 import axios from "axios";
 
-const baseURL = "http://localhost:8080/api/v1/post";
+const baseUrl = 'http://localhost:8080/api/v1/post';
+// const baseUrl = 'http://post_backend:8080/api/v1/post';
 
 class Posts extends React.Component {
   constructor(props) {
@@ -50,7 +51,7 @@ class Posts extends React.Component {
       console.log(localStorage.getItem("token"))
 
       axios
-        .get(baseURL, {
+        .get(baseUrl, {
           params,
           headers: {
           'Authorization': 'Bearer ' + localStorage.getItem("token"),
@@ -77,7 +78,7 @@ class Posts extends React.Component {
       this.setState({ fetching: true });
 
       axios
-        .get(baseURL, { params, headers: {
+        .get(baseUrl, { params, headers: {
             'Authorization': 'Bearer ' + localStorage.getItem("token"),
           } })
         .then((response) => {

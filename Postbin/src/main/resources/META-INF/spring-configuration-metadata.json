@@ -17,8 +17,8 @@
       "type": "java.lang.String"
     },
     {
-      "name": "myapp.endpoint-url",
-      "type": "java.lang.Integer"
+      "name": "s3-config.endpoint-url",
+      "type": "java.lang.String"
     }
   ]
 }

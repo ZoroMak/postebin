@@ -1,0 +1,28 @@
+spring:
+  application.name: Postbin
+  cache:
+    type: redis
+    host: post_redis
+    port: 6379
+    redis:
+      time-to-live: 3600
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/postbin}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:qwer1234}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        hbm2ddl: validate
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+s3-config:
+  public-access-key: ${PUBLIC_ACCESS_KEY}
+  public-secret-key: ${PRIVATE_ACCESS_KEY}
+  public-bucket-name: ${BUCKET_NAME}
+  region: ${REGION}
+  endpoint-url: ${ENDPOINT_URL}

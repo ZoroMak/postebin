@@ -5,7 +5,8 @@ import axios from "axios";
 
 import ModalWindow from "../window/ModalWindow"; //Убрать
 
-const baseUrl = "http://localhost:8080/api/v1/post/";
+const baseUrl = 'http://localhost:8080/api/v1/post';
+// const baseUrl = 'http://post_backend:8080/api/v1/post';
 
 class FindPost extends React.Component {
   constructor(props) {

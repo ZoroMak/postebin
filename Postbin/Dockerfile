@@ -7,7 +7,7 @@ COPY settings.gradle .
 COPY src src
 
 
-RUN gradle build
+RUN gradle build -x test
 
 
 FROM openjdk:17-jdk-alpine

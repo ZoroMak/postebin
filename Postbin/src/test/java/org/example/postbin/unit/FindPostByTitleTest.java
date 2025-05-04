@@ -54,6 +54,7 @@ public class FindPostByTitleTest {
         ListPostReaderDTO postReaderDTO = new ListPostReaderDTO(
                 post.getId(),
                 post.getTitle().title(),
+                post.getHashUrl(),
                 post.getAuthor().nickname(),
                 post.getCreatedAt()
         );
@@ -115,6 +116,7 @@ public class FindPostByTitleTest {
         ListPostReaderDTO postReaderDTO1 = new ListPostReaderDTO(
                 post1.getId(),
                 post1.getTitle().title(),
+                post1.getHashUrl(),
                 post1.getAuthor().nickname(),
                 post1.getCreatedAt()
         );
@@ -122,6 +124,7 @@ public class FindPostByTitleTest {
         ListPostReaderDTO postReaderDTO2 = new ListPostReaderDTO(
                 post2.getId(),
                 post2.getTitle().title(),
+                post2.getHashUrl(),
                 post2.getAuthor().nickname(),
                 post2.getCreatedAt()
         );
@@ -135,6 +138,7 @@ public class FindPostByTitleTest {
             return new ListPostReaderDTO(
                     post.getId(),
                     post.getTitle().title(),
+                    post.getHashUrl(),
                     post.getAuthor().nickname(),
                     post.getCreatedAt()
             );

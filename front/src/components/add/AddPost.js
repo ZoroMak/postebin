@@ -3,8 +3,8 @@ import Form from "./Form";
 import AddedPost from "./AddedPost";
 import axios from "axios";
 
-const baseUrl = "http://localhost:8080/api/v1/post";
-
+const baseUrl = 'http://localhost:8080/api/v1/post';
+// const baseUrl = 'http://post_backend:8080/api/v1/post';
 class AddPost extends React.Component {
   constructor(props) {
     super(props);

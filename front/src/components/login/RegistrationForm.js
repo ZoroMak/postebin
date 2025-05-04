@@ -3,6 +3,7 @@ import axios from 'axios';
 import './LoginForm.css';
 
 const baseUrl = "http://localhost:8080/api/v1/user/regist";
+// const baseUrl = "http://post_backend:8080/api/v1/user/regist";
 
 class RegistrationForm extends Component {
     constructor(props) {
